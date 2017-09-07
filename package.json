@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "webpack --config webpack.config.js --progress --colors -w",
-    "test" : "karma start"
+    "test": "karma start"
   },
   "keywords": [],
   "author": "Neeraj",
@@ -41,6 +41,7 @@
     "karma-webpack": "^2.0.4",
     "mocha": "^3.5.0",
     "node-sass": "^4.5.3",
+    "react-addons-test-utils": "^15.6.0",
     "sass-loader": "^6.0.6",
     "webpack": "^1.14.0"
   }

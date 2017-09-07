@@ -1,18 +1,17 @@
-
 var webpack = require('webpack')
-module.exports= {
+module.exports = {
   entry : [
     'script!jquery/dist/jquery.min.js',
     'script!foundation-sites/dist/js/foundation.min.js',
     './app/appx.jsx'
   ],
-  externals:{
-    jquery : 'jQuery'
+  externals: {
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
-      '$' : 'jquery',
-      'jQuery' : 'jquery'
+      '$': 'jquery',
+      'jQuery': 'jquery'
     })
   ],
   output : {
@@ -24,9 +23,11 @@ module.exports= {
       alias: {
         Main : 'app/components/Main.jsx',
         NavBar : 'app/components/NavBar.jsx',
+        Timer : 'app/components/Timer.jsx',
+        Countdown : 'app/components/Countdown.jsx',
+        Clock : 'app/components/Clock.jsx',
         applicationStyles : "app/styles/app.css",
         applicationSCSCStyles : "app/styles/appSCSS.scss"
-
       },
       extensions : ['', '.js','.jsx']
   },
@@ -39,7 +40,9 @@ module.exports= {
           },
           test : /\.jsx?$/,
           exclude: /(node_modules)|(bower_components)/
-        }
+        },
+
+
       ]
   },
   devtool : 'cheap-module-eval-source-map'

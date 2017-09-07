@@ -13,7 +13,7 @@ var NavBar = (props) =>{
         <div className="top-bar-left">
           <ul className="menu">
             <li className="menu-text">
-              Created by <a href="#" target="_blank">Neeraj Jangid</a>
+              Created by <Link to="/">Neeraj Jangid</Link>
             </li>
           </ul>
         </div>
